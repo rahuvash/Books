@@ -1,15 +1,12 @@
-import { useState } from 'react'
-
-
-function App() {
-
+// src/App.jsx
+import React from 'react';
+import Home from './Pages/Home';
+const App = () => {
   return (
-    <>
-        <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>    
-    </>
-  )
-}
+   <>
+   <Home/>
+   </>
+  );
+};
 
-export default App
+export default App;
