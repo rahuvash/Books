@@ -1,12 +1,16 @@
-// src/pages/SignIn.jsx
 import React from 'react';
+
+const signinSubmit = (event) => {
+  event.preventDefault(); // Prevent the default form submission
+  alert("Sign in alert");
+}
 
 const SignIn = () => {
   return (
     <div className="h-screen flex items-center justify-center bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
         <h2 className="text-2xl font-bold mb-6 text-gray-900">Sign In</h2>
-        <form>
+        <form onSubmit={signinSubmit}>
           <div className="mb-4">
             <label className="block text-gray-700 mb-2" htmlFor="email">Email</label>
             <input
@@ -25,7 +29,10 @@ const SignIn = () => {
               required
             />
           </div>
-          <button className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">
+          <button
+            type="submit"
+            className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600"
+          >
             Sign In
           </button>
         </form>
