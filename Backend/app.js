@@ -1,7 +1,6 @@
 const path = require('path');
 require('dotenv').config({ path: path.resolve(__dirname, 'config', '.env') });
 const express = require('express');
-const mongoose = require('mongoose');
 const connectDB = require('./config/db');
 const authRoutes = require('./routes/authRoutes');
 
