@@ -1,0 +1,99 @@
+[
+    {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "image": "https://books.google.com/books/content?id=PGR2AwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "downloadLink": "http://example.com/to-kill-a-mockingbird.pdf"
+    },
+    {
+      "title": "1984",
+      "author": "George Orwell",
+      "image": "https://books.google.com/books/content?id=kotPYEqx7kMC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "downloadLink": "http://example.com/1984.pdf"
+    },
+    {
+      "title": "Moby Dick",
+      "author": "Herman Melville",
+      "image": "https://books.google.com/books/content?id=e1V3LwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "downloadLink": "http://example.com/moby-dick.pdf"
+    },
+    {
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "image": "https://books.google.com/books/content?id=8rKsCwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "downloadLink": "http://example.com/pride-and-prejudice.pdf"
+    },
+    {
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "image": "https://books.google.com/books/content?id=39GzDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "downloadLink": "http://example.com/the-great-gatsby.pdf"
+    },
+    {
+      "title": "War and Peace",
+      "author": "Leo Tolstoy",
+      "image": "https://books.google.com/books/content?id=ZVlGAAAAcAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "downloadLink": "http://example.com/war-and-peace.pdf"
+    },
+    {
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "image": "https://books.google.com/books/content?id=a5nQLBvUe6EC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "downloadLink": "http://example.com/the-catcher-in-the-rye.pdf"
+    },
+    {
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "image": "https://books.google.com/books/content?id=8QAzDQAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "downloadLink": "http://example.com/the-hobbit.pdf"
+    },
+    {
+      "title": "Fahrenheit 451",
+      "author": "Ray Bradbury",
+      "image": "https://books.google.com/books/content?id=M0LjDf4kY2kC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "downloadLink": "http://example.com/fahrenheit-451.pdf"
+    },
+    {
+      "title": "Brave New World",
+      "author": "Aldous Huxley",
+      "image": "https://books.google.com/books/content?id=ekGPQecMvwMC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "downloadLink": "http://example.com/brave-new-world.pdf"
+    },
+    {
+      "title": "Animal Farm",
+      "author": "George Orwell",
+      "image": "https://books.google.com/books/content?id=-IzbCwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "downloadLink": "http://example.com/animal-farm.pdf"
+    },
+    {
+      "title": "Jane Eyre",
+      "author": "Charlotte Bronte",
+      "image": "https://books.google.com/books/content?id=zT3C_9r7Dg4C&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "downloadLink": "http://example.com/jane-eyre.pdf"
+    },
+    {
+      "title": "The Adventures of Huckleberry Finn",
+      "author": "Mark Twain",
+      "image": "https://books.google.com/books/content?id=_g5FAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "downloadLink": "http://example.com/the-adventures-of-huckleberry-finn.pdf"
+    },
+    {
+      "title": "Wuthering Heights",
+      "author": "Emily Bronte",
+      "image": "https://books.google.com/books/content?id=ISv_6Lyd4UYC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "downloadLink": "http://example.com/wuthering-heights.pdf"
+    },
+    {
+      "title": "Crime and Punishment",
+      "author": "Fyodor Dostoevsky",
+      "image": "https://books.google.com/books/content?id=Ul1mAQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "downloadLink": "http://example.com/crime-and-punishment.pdf"
+    },
+    {
+      "title": "The Brothers Karamazov",
+      "author": "Fyodor Dostoevsky",
+      "image": "https://books.google.com/books/content?id=vtcNMQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "downloadLink": "http://example.com/the-brothers-karamazov.pdf"
+    }
+  ]
+  

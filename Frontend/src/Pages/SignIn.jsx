@@ -1,12 +1,18 @@
 import React from 'react';
-
-const signinSubmit = (event) => {
-  event.preventDefault(); // Prevent the default form submission
-  alert("Sign in alert");
-}
+import { useNavigate } from "react-router-dom";
+import Header from '../Components/Header'
 
 const SignIn = () => {
+  const navigate = useNavigate();
+
+  const signinSubmit = (event) => {
+    event.preventDefault(); // Prevent the default form submission
+    navigate('/dashboard');
+  }
+
   return (
+  <>
+  <Header/>
     <div className="h-screen flex items-center justify-center bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
         <h2 className="text-2xl font-bold mb-6 text-gray-900">Sign In</h2>
@@ -38,6 +44,7 @@ const SignIn = () => {
         </form>
       </div>
     </div>
+    </>
   );
 };
 

@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios"; // Import Axios
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
+import Header from "../Components/Header";
 
 const Register = () => {
   const navigate = useNavigate(); // Initialize the navigate hook
@@ -37,6 +38,8 @@ const Register = () => {
   };
 
   return (
+    <>
+    <Header/>
     <div className="h-screen flex items-center justify-center bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
         <h2 className="text-2xl font-bold mb-6 text-gray-900">Register</h2>
@@ -99,6 +102,7 @@ const Register = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
