@@ -1,16 +1,20 @@
-require('dotenv').config();
+const path = require('path');
+require('dotenv').config({ path: path.resolve(__dirname, 'config', '.env') });
 const express = require('express');
-const exampleRoutes = require('./routes/exampleRoutes');
+const mongoose = require('mongoose');
+const connectDB = require('./config/db');
+const authRoutes = require('./routes/authRoutes');
 
 const app = express();
 
 // Middleware
 app.use(express.json());
-// Add more middleware as needed...
 
 // Routes
-app.use('/api/example', exampleRoutes);
-// Add more routes as needed...
+app.use('/api/auth', authRoutes);
+
+// Connect to MongoDB
+connectDB();
 
 // Start server
 const port = process.env.PORT || 3000;
