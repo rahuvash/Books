@@ -58,6 +58,9 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           <li className="mb-4">
             <button onClick={handleUploadClick} className="text-gray-800 hover:text-gray-600">Upload Book</button>
           </li>
+          <li className="mb-4">
+            <button onClick={handleUploadClick} className="text-gray-800 hover:text-gray-600">Log Out</button>
+          </li>
           {/* Add more links or buttons here */}
         </ul>
       </div>

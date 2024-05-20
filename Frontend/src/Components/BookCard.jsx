@@ -12,6 +12,7 @@ const BookCard = ({ book }) => {
         />
         <a
           href={book.downloadLink}
+          target= "_blank"
           download
           className="absolute top-2 right-2 p-2 bg-blue-500 text-white rounded-full hover:bg-blue-600"
         >

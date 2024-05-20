@@ -11,9 +11,14 @@ const Dashboard = () => {
   const [isOpen, setIsOpen] = useState(false); // State for sidebar
   const booksPerPage = 8;
   const [books, setBooks] = useState([]);
+  const [userName,setUserName]= useState('');
 
   useEffect(() => {
     setBooks(booksData);
+    const name = localStorage.getItem('name');
+    if (name) {
+      setUserName(name);
+    }
   }, []);
 
   const toggleSidebar = () => {
@@ -47,15 +52,21 @@ const Dashboard = () => {
         <button onClick={toggleSidebar} className="p-2 bg-blue-500 text-white rounded-lg fixed top-4 left-4 z-50">
           <FaBars />
         </button>
-        <div className="mb-4">
-          <input
-            type="text"
-            placeholder="Search for books..."
-            value={searchTerm}
-            onChange={handleSearch}
-            className="w-1/3 p-2 ml-16 border border-gray-300 rounded-lg"
-          />
-        </div>
+        <div className="mb-4 flex justify-between">
+  <div>
+    <input
+      type="text"
+      placeholder="Search for books..."
+      value={searchTerm}
+      onChange={handleSearch}
+      className=" ml-12 w-3/4 p-2 border border-gray-300 rounded-lg"
+    />
+  </div>
+  <div>
+    <p className="text-gray-600">Hi, {userName}</p>
+  </div>
+</div>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {currentBooks.map((book, index) => (
             <BookCard key={index} book={book} />
