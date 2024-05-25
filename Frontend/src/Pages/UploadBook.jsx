@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaImage, FaFilePdf } from 'react-icons/fa';
+import Modal from '../Components/Modal.jsx'; // Import your Modal component here
 
 const UploadBook = () => {
   const navigate = useNavigate();
@@ -11,6 +12,8 @@ const UploadBook = () => {
     image: null,
     pdf: null
   });
+
+  const [showModal, setShowModal] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -38,8 +41,12 @@ const UploadBook = () => {
       image: null,
       pdf: null
     });
-    // Navigate to another page after submission (e.g., dashboard)
-    navigate('/dashboard');
+    // Set modal visibility to true
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
   };
 
   const openImageInNewTab = () => {
@@ -104,6 +111,13 @@ const UploadBook = () => {
           <br/>
           <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-red-600 w-full">Upload</button>
         </form>
+
+        {/* Modal to show success message */}
+        {showModal && (
+          <Modal onClose={closeModal}>
+            <h2>Book Uploaded Successfully!</h2>
+          </Modal>
+        )}
       </div>
     </div>
   );
